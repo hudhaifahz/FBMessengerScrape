@@ -26,7 +26,7 @@ var hudAliMention = 0;
 var hudMerMention = 0;
 
 var reacts;
-var emojiReaction = "\u00f0\u009f\u0098\u0086"
+var emojiReaction = "\u00f0\u009f\u0091\u008e" //laugh: "\u00f0\u009f\u0098\u0086", dislike: "\u00f0\u009f\u0091\u008e"
 var timestamp = 0 //1514764800; // Jan 1 2018
 
 /*
@@ -48,10 +48,10 @@ jsonContent["messages"].forEach(element => {
             reacts = element.reactions
             aliReceived++
             reacts.forEach(emoji => { 
-                if(emoji.actor == "Hudhaifah Zahid" && emoji.reaction == emojiReaction ){
+                if(emoji.actor == "Hudhaifah Zahid"){// && emoji.reaction == emojiReaction ){
                     hudAli++
                 }
-                if(emoji.actor == "Meryem Sena Kat\u00c4\u00b1rc\u00c4\u00b1o\u00c4\u009flu" && emoji.reaction == emojiReaction){
+                if(emoji.actor == "Meryem Sena Kat\u00c4\u00b1rc\u00c4\u00b1o\u00c4\u009flu"){// && emoji.reaction == emojiReaction){
                     merAli++
                 }
             })
@@ -74,10 +74,10 @@ jsonContent["messages"].forEach(element => {
             reacts = element.reactions
             hudReceived++
             reacts.forEach(emoji => {
-                if(emoji.actor == "Ali Serag El-Din" && emoji.reaction == emojiReaction){
+                if(emoji.actor == "Ali Serag El-Din"){// && emoji.reaction == emojiReaction){
                     aliHud++
                 }
-                if(emoji.actor == "Meryem Sena Kat\u00c4\u00b1rc\u00c4\u00b1o\u00c4\u009flu" && emoji.reaction == emojiReaction){
+                if(emoji.actor == "Meryem Sena Kat\u00c4\u00b1rc\u00c4\u00b1o\u00c4\u009flu"){// && emoji.reaction == emojiReaction){
                     merHud++
                 }
             })
@@ -101,10 +101,10 @@ jsonContent["messages"].forEach(element => {
             reacts = element.reactions
             merReceived++
             reacts.forEach(emoji => {
-                if(emoji.actor == "Ali Serag El-Din" && emoji.reaction == emojiReaction){
+                if(emoji.actor == "Ali Serag El-Din"){// && emoji.reaction == emojiReaction){
                     aliMer++
                 }
-                if(emoji.actor == "Hudhaifah Zahid" && emoji.reaction == emojiReaction){
+                if(emoji.actor == "Hudhaifah Zahid"){// && emoji.reaction == emojiReaction){
                     hudMer++
                 }
             })
